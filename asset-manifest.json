@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/its-the-gorilla/static/css/main.cdefe495.chunk.css",
+    "main.js": "/its-the-gorilla/static/js/main.d67ea34a.chunk.js",
+    "main.js.map": "/its-the-gorilla/static/js/main.d67ea34a.chunk.js.map",
+    "runtime-main.js": "/its-the-gorilla/static/js/runtime-main.bca46f0b.js",
+    "runtime-main.js.map": "/its-the-gorilla/static/js/runtime-main.bca46f0b.js.map",
+    "static/js/2.c03adb01.chunk.js": "/its-the-gorilla/static/js/2.c03adb01.chunk.js",
+    "static/js/2.c03adb01.chunk.js.map": "/its-the-gorilla/static/js/2.c03adb01.chunk.js.map",
+    "index.html": "/its-the-gorilla/index.html",
+    "precache-manifest.56cefcdfccd8a55a18788dd805d9d058.js": "/its-the-gorilla/precache-manifest.56cefcdfccd8a55a18788dd805d9d058.js",
+    "service-worker.js": "/its-the-gorilla/service-worker.js",
+    "static/css/main.cdefe495.chunk.css.map": "/its-the-gorilla/static/css/main.cdefe495.chunk.css.map",
+    "static/js/2.c03adb01.chunk.js.LICENSE.txt": "/its-the-gorilla/static/js/2.c03adb01.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/its-the-gorilla/static/media/wood.6597d9f0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bca46f0b.js",
+    "static/js/2.c03adb01.chunk.js",
+    "static/css/main.cdefe495.chunk.css",
+    "static/js/main.d67ea34a.chunk.js"
+  ]
+}
