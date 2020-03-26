@@ -1,0 +1,84 @@
+.card {
+  background-image: url("../../image/background.jpg");
+  background-size: 20em;
+  height: 10em;
+  width: 7em;
+  box-shadow: 0 0 1.1em 0.5em rgba(0, 0, 0, 0.5);
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  position: relative;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &--selected {
+    &::before {
+      box-shadow: 0 0 2em 1em #e3e617;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.75em;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1.1em;
+    width: 1.4em;
+    background-image: url("../../image/pin.png");
+    top: 0.25em;
+    right: 0.25em;
+    background-size: cover;
+  }
+
+  &__main {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 0.75em 0.75em 0 0;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    z-index: 100;
+    transform: rotateZ(-3deg);
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1em;
+    padding: 1em 1em 0;
+  }
+
+  &__footer {
+    background: black;
+    flex: 1;
+    border-radius: 0 0 0.75em 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__number {
+    color: white;
+    font-size: 2em;
+    margin-right: 0.25em;
+  }
+}

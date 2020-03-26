@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import "./reset";
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Caveat", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
