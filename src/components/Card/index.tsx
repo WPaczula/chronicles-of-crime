@@ -4,20 +4,25 @@ import "./styles.scss";
 export interface ICardProps {
   number: number;
   description: string;
+  isToggled: boolean;
+  toggleCard: (number: number) => void;
 }
 
-const Card: React.FunctionComponent<ICardProps> = ({ number, description }) => {
-  const [isSelected, setSelected] = React.useState<boolean>(false);
-
-  const onClick = React.useCallback(() => {
-    setSelected(s => !s);
-  }, []);
-
+const Card: React.FunctionComponent<ICardProps> = ({
+  number,
+  description,
+  isToggled,
+  toggleCard
+}) => {
   const classNames = ["card"];
 
-  if (isSelected) {
+  if (isToggled) {
     classNames.push("card--selected");
   }
+
+  const onClick = React.useCallback(() => {
+    toggleCard(number);
+  }, [toggleCard, number]);
 
   return (
     <div className={classNames.join(" ")} onClick={onClick} role="presentation">
