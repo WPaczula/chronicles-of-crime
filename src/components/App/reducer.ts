@@ -1,6 +1,10 @@
-import { createReducer, ActionType } from "typesafe-actions";
-import produce, { Draft } from "immer";
-import { Actions, toggleCard, TOGGLE_CARD } from "components/App/actions";
+import produce, {
+  Draft,
+  produceWithPatches,
+  enablePatches,
+  applyPatches
+} from "immer";
+import { Actions, TOGGLE_CARD, APPLY_PATCHES } from "components/App/actions";
 import cards from "data/cards.json";
 
 export type ToggledCards = {
@@ -16,12 +20,18 @@ export const getInitialState = (): ToggledCards =>
     {}
   );
 
-const reducer = createReducer<ToggledCards, Actions>(getInitialState(), {
-  [TOGGLE_CARD]: produce(
-    (draft: Draft<ToggledCards>, action: ActionType<typeof toggleCard>) => {
+enablePatches();
+const producer = (draft: Draft<ToggledCards>, action: Actions) => {
+  switch (action.type) {
+    case TOGGLE_CARD: {
       draft[action.number] = !draft[action.number];
+      break;
     }
-  )
-});
 
-export default reducer;
+    case APPLY_PATCHES: {
+      applyPatches(draft, action.patches);
+    }
+  }
+};
+export const reducerWithPatches = produceWithPatches(producer);
+export const reducer = produce(producer);
