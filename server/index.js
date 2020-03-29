@@ -1,6 +1,7 @@
 const { Server: WebSocketServer } = require("ws");
 
-const webSocketServer = new WebSocketServer({ port: 5001 });
+const port = process.env.PORT || 5001;
+const webSocketServer = new WebSocketServer({ port });
 
 const connections = [];
 
