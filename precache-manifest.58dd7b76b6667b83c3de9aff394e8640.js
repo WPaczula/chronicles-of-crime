@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fcdc6912a74d14aa54e90a0f3c55ffb",
+    "revision": "60b14eb8859d188031a3297d3b9d1172",
     "url": "/its-the-gorilla/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/its-the-gorilla/static/css/2.f42e59c9.chunk.css"
   },
   {
-    "revision": "a3473f448b2184738c70",
-    "url": "/its-the-gorilla/static/css/main.a366b92f.chunk.css"
+    "revision": "a9c209262c4a1345c006",
+    "url": "/its-the-gorilla/static/css/main.16a79fd7.chunk.css"
   },
   {
     "revision": "bf28abd5b0870d541f6d",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/its-the-gorilla/static/js/2.05233824.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3473f448b2184738c70",
+    "revision": "a9c209262c4a1345c006",
     "url": "/its-the-gorilla/static/js/main.f49c5400.chunk.js"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/its-the-gorilla/static/media/pin.8256ad05.png"
   },
   {
-    "revision": "6597d9f01b86585efc72abf5698c4fd4",
-    "url": "/its-the-gorilla/static/media/wood.6597d9f0.jpg"
+    "revision": "d519e6aa969e0189bf8ef16aee5bae8f",
+    "url": "/its-the-gorilla/static/media/wood.d519e6aa.jpg"
   }
 ]);
