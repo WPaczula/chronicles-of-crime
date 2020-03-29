@@ -21,7 +21,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 interface IAppProps {}
 
-const serverUrl: string = process.env.SERVER_URL ?? "ws://localhost:5001";
+const serverUrl: string =
+  process.env.REACT_APP_WEBSOCKET_URL ?? "ws://localhost:5001";
 
 const App: React.FunctionComponent<IAppProps> = () => {
   const [selectedColor, setSelectedColor] = React.useState<string>();

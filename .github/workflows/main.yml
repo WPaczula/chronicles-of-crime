@@ -24,7 +24,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Set variables
+        env:
+          REACT_APP_WEBSOCKET_URL: ${{secrets.REACT_APP_WEBSOCKET_URL}}
+      - name: Set environment variables
         run: |
           git config --global user.email ${{secrets.GITHUB_EMAIL}}
           git config --global user.name ${{secrets.GITHUB_NAME}}
