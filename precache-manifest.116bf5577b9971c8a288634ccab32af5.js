@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1a3f9fb0e0e84cdde826c6b4b9a93c1",
+    "revision": "8189fc75177ec0677b70aba6b79222e6",
     "url": "/its-the-gorilla/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/its-the-gorilla/static/css/2.f42e59c9.chunk.css"
   },
   {
-    "revision": "d9b57b41e2dc6674fc81",
+    "revision": "5e5e46f8c771c6836ea4",
     "url": "/its-the-gorilla/static/css/main.a366b92f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/its-the-gorilla/static/js/2.05233824.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d9b57b41e2dc6674fc81",
-    "url": "/its-the-gorilla/static/js/main.e110fb59.chunk.js"
+    "revision": "5e5e46f8c771c6836ea4",
+    "url": "/its-the-gorilla/static/js/main.b051d211.chunk.js"
   },
   {
     "revision": "26d23db38a9c395be445",
