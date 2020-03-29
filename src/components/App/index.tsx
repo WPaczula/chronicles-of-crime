@@ -14,12 +14,22 @@ import {
 import useSocket from "hooks/useSocket";
 import "./styles.scss";
 import { Patch } from "immer";
+import ColorPicker from "components/ColorPicker";
+import { ColorChangeHandler } from "react-color";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IAppProps {}
 
 const serverUrl: string = process.env.SERVER_URL ?? "ws://localhost:5001";
 
 const App: React.FunctionComponent<IAppProps> = () => {
+  const [selectedColor, setSelectedColor] = React.useState<string>();
+
+  const onChange: ColorChangeHandler = React.useCallback(color => {
+    setSelectedColor(color.hex);
+  }, []);
+
   const [toggledCards, setToggledCards] = React.useState(getInitialState);
 
   const send = useSocket<Patch[]>(serverUrl, (patches: Patch[]) => {
@@ -40,13 +50,24 @@ const App: React.FunctionComponent<IAppProps> = () => {
 
   const toggleCard = React.useCallback(
     (number: number) => {
-      dispatch(toggleCardAction(number));
+      if (selectedColor) {
+        dispatch(toggleCardAction(number, selectedColor));
+      } else {
+        toast("Choose a color first!", {
+          type: "error",
+          position: "top-center",
+          pauseOnHover: false,
+          autoClose: 2000
+        });
+      }
     },
-    [dispatch]
+    [dispatch, selectedColor]
   );
 
   return (
     <div className="app">
+      <ToastContainer />
+      <ColorPicker selectedColor={selectedColor} onChange={onChange} />
       <CardList
         cards={cards}
         toggleCard={toggleCard}

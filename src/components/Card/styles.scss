@@ -12,20 +12,10 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: transform 0.5s;
+  user-select: none;
 
   &:hover {
     transform: scale(1.025);
-  }
-
-  &--selected {
-    &::before {
-      box-shadow: 0 0 2em 1em #e3e617;
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border-radius: 0.75em;
-    }
   }
 
   @media only screen and (min-width: 600px) {

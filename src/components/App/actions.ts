@@ -4,8 +4,9 @@ import { ActionType } from "typesafe-actions";
 export const TOGGLE_CARD = "TOGGLE_CARD";
 export const APPLY_PATCHES = "APPLY_PATCHES";
 
-export const toggleCard = (number: number) => ({
+export const toggleCard = (number: number, color: string) => ({
   type: TOGGLE_CARD as typeof TOGGLE_CARD,
+  color,
   number
 });
 

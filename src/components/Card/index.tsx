@@ -5,27 +5,30 @@ export interface ICardProps {
   number: number;
   description: string;
   isToggled: boolean;
-  toggleCard: (number: number) => void;
+  toggleCard(number: number): void;
+  color?: string;
 }
 
 const Card: React.FunctionComponent<ICardProps> = ({
   number,
   description,
   isToggled,
-  toggleCard
+  toggleCard,
+  color
 }) => {
-  const classNames = ["card"];
-
-  if (isToggled) {
-    classNames.push("card--selected");
-  }
-
   const onClick = React.useCallback(() => {
     toggleCard(number);
   }, [toggleCard, number]);
 
   return (
-    <div className={classNames.join(" ")} onClick={onClick} role="presentation">
+    <div
+      className="card"
+      onClick={onClick}
+      role="presentation"
+      style={
+        isToggled && color ? { boxShadow: `0 0 0em 0.5em ${color}` } : undefined
+      }
+    >
       <div className="card__main">
         <p className="card__description">{description}</p>
       </div>

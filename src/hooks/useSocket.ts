@@ -21,7 +21,9 @@ function useSocket<Data>(url: string, onMessage: MessageHandler<Data>) {
   }, [url]);
 
   return React.useCallback((data: Data) => {
-    socket.current?.send(JSON.stringify(data));
+    if (socket.current?.readyState === 1) {
+      socket.current?.send(JSON.stringify(data));
+    }
   }, []);
 }
 

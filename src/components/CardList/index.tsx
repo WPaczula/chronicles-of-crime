@@ -21,7 +21,8 @@ const CardList: React.FunctionComponent<ICardListProps> = ({
           number={i + 1}
           key={description}
           description={description}
-          isToggled={toggledCards[i + 1]}
+          isToggled={toggledCards[i + 1].selected}
+          color={toggledCards[i + 1].color}
           toggleCard={toggleCard}
         />
       ))}
