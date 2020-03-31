@@ -22,8 +22,8 @@ const ColorPicker: React.FunctionComponent<ColorPickerProps> = ({
             "#21F6f3",
             "#4caf50",
             "#ffeb3b",
-            "#607d8b",
-            "#12001B"
+            "#FF8C00",
+            "#000000"
           ]}
           width="auto"
           circleSize={25}

@@ -26,7 +26,9 @@ const Card: React.FunctionComponent<ICardProps> = ({
       onClick={onClick}
       role="presentation"
       style={
-        isToggled && color ? { boxShadow: `0 0 0em 0.5em ${color}` } : undefined
+        isToggled && color
+          ? { boxShadow: `0 0 1.1em 0.5em ${color}` }
+          : undefined
       }
     >
       <div className="card__main">
