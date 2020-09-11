@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/its-the-gorilla/static/css/main.16a79fd7.chunk.css",
-    "main.js": "/its-the-gorilla/static/js/main.65f0c925.chunk.js",
-    "main.js.map": "/its-the-gorilla/static/js/main.65f0c925.chunk.js.map",
+    "main.css": "/its-the-gorilla/static/css/main.6289a3c3.chunk.css",
+    "main.js": "/its-the-gorilla/static/js/main.36df5f4b.chunk.js",
+    "main.js.map": "/its-the-gorilla/static/js/main.36df5f4b.chunk.js.map",
     "runtime-main.js": "/its-the-gorilla/static/js/runtime-main.9981df88.js",
     "runtime-main.js.map": "/its-the-gorilla/static/js/runtime-main.9981df88.js.map",
     "static/css/2.f42e59c9.chunk.css": "/its-the-gorilla/static/css/2.f42e59c9.chunk.css",
-    "static/js/2.4ae9f71b.chunk.js": "/its-the-gorilla/static/js/2.4ae9f71b.chunk.js",
-    "static/js/2.4ae9f71b.chunk.js.map": "/its-the-gorilla/static/js/2.4ae9f71b.chunk.js.map",
+    "static/js/2.9e33da8d.chunk.js": "/its-the-gorilla/static/js/2.9e33da8d.chunk.js",
+    "static/js/2.9e33da8d.chunk.js.map": "/its-the-gorilla/static/js/2.9e33da8d.chunk.js.map",
     "index.html": "/its-the-gorilla/index.html",
-    "precache-manifest.bb225baa6a7cb82f1c24c0185a3cebe0.js": "/its-the-gorilla/precache-manifest.bb225baa6a7cb82f1c24c0185a3cebe0.js",
+    "precache-manifest.e74ca50b21f80ddc670a02b461379653.js": "/its-the-gorilla/precache-manifest.e74ca50b21f80ddc670a02b461379653.js",
     "service-worker.js": "/its-the-gorilla/service-worker.js",
     "static/css/2.f42e59c9.chunk.css.map": "/its-the-gorilla/static/css/2.f42e59c9.chunk.css.map",
-    "static/css/main.16a79fd7.chunk.css.map": "/its-the-gorilla/static/css/main.16a79fd7.chunk.css.map",
-    "static/js/2.4ae9f71b.chunk.js.LICENSE.txt": "/its-the-gorilla/static/js/2.4ae9f71b.chunk.js.LICENSE.txt",
+    "static/css/main.6289a3c3.chunk.css.map": "/its-the-gorilla/static/css/main.6289a3c3.chunk.css.map",
+    "static/js/2.9e33da8d.chunk.js.LICENSE.txt": "/its-the-gorilla/static/js/2.9e33da8d.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/its-the-gorilla/static/media/wood.d519e6aa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9981df88.js",
     "static/css/2.f42e59c9.chunk.css",
-    "static/js/2.4ae9f71b.chunk.js",
-    "static/css/main.16a79fd7.chunk.css",
-    "static/js/main.65f0c925.chunk.js"
+    "static/js/2.9e33da8d.chunk.js",
+    "static/css/main.6289a3c3.chunk.css",
+    "static/js/main.36df5f4b.chunk.js"
   ]
 }
